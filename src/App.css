@@ -1,38 +1,167 @@
 .App {
-  text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url("assets/background.jpg");
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.NavBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width : 100%;
+    height : 10vh;
+    position: relative;
+    margin: 0px,100px; 
+    flex : 1;
+    bottom : 30px;
+
+}
+.NavBar img{
+    left : 40px;
+    width: 170px ;
+    height : 25px;
+    cursor: pointer;
+    position: relative;
+  
+   
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.NavBar nav{
+    flex : 1;
+    padding-left: 57%;
+    
+}
+ ul li  {
+    display: inline-flex;
+    list-style: none;
+    margin: 0px 20px;
+    position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color :#ad666a
+}
+.paragraph {
+    width : 70vh;
+    height : 50vh;
+    position: relative;
+    bottom: 10vh;
+    right:50vh;
+    text-align: vertical;
+}
+.paragraph h6 {
+    color: white;
+    font-size: 1.3vh;
+    font-weight:500;
+    left : 7px;
+    position: relative;
+    top:35px;    
+    letter-spacing:0.6px
+}
+.paragraph span {
+    font-weight:bold;
+}
+.paragraph p{
+     color: white;
+    font-size: 5vh;
+    font-weight:bolder;
+    left : 5px;
+    position: relative;
+    word-spacing: 1px;
+    font-family: 'Orbitron', sans-serif;
+}
+.paragraph h4{
+    color: white;
+    font-size: 1.8vh;
+    font-weight:500;
+    left : 7px;
+    position: relative;   
+    bottom : 35px;
+    letter-spacing: 1px
+}
+.paragraph button {
+  background-color : #C159DC;
+  border: none;
   color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius : 4px;
+  left: 5px;
+  position: relative;
+  font-weight : 700;
+  letter-spacing: 0.5px;
+  bottom : 35px
+}
+.numbersAndData{
+    display: flex;
+    width : 70%;
+    height :1vh;
+    align-items: center;
+    position: relative;
+    flex-direction: row;
+    bottom : 15vh;
+    justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.stats{
+    width : 30vh;
+    height : 12vh;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* overflow: hidden; */
+    
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.numbers{
+    color :white;
+    font-size :3.5vh;
+    font-family: 'Orbitron', sans-serif;
+    position: relative;
+    max-lines: 1;
+}
+.data{
+    color :white;
+    bottom:5vh;
+    position: relative;
+    font-weight:400;
+    font-size : 1.75vh
+}
+.planets{
+     width : 70%;
+     position: relative;
+     display :flex;
+     align-items : center;
+     justify-content : space-between;
+   
+}
+.planet{
+    width : 20%;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    position: relative;
+}
+.planet img{
+    height :19vh;
+}
+.planet h5{
+    color : white;
+    bottom : 1vh;
+    position: relative;
+    font-family: 'Orbitron', sans-serif;
 }
